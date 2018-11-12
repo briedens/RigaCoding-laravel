@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    color:white;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** Header Start***********************/
+
+header {
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Img/bgOne.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display:grid;
+    width: 100%;
+    grid-template-areas: "nav-left-list logo nav-right-list";
+    grid-template-columns: 4fr 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    border-bottom: solid 1px white;
+}
+
+.nav_item{
+    font-weight: 550;
+    padding-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_item a:link, .nav_item a:visited {
+    text-decoration: none;
+    /*color:#363636;*/
+    color: #de302f;/*rgb(216, 214, 214);*/
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav_item a:hover {
+    color: rgb(107, 50, 60);
+    
+}
+
+.logo img{
+    width: 80px;
+}
+
+.nav_left_list, .nav_right_list {
+    padding: 0;
+    display: inline-flex;
+}
+
+.nav_left_list {
+    right: 10px;
+}
+
+/*** Header Ending ****************************/
+
+
+
+
+
+
+/*** Features Start ***********************/
+
+#features {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #3a3a3a;
+    padding: 50px 10%;
+    
+}
+ 
+#features .container { 
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*background-color: #666666;*/
+    overflow: hidden;
+}
+
+#features .container .box {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 30px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+                "icon title"
+                "icon text";
+}
+
+#features .container .box .icon {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+}
+
+#features .container .box .icon span {
+    font-size: 30px;
+    color: rgb(199, 62, 62);
+}
+
+#features .container .box .title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#features .container .box .text {
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+}
+
+#features .container .box .text p {
+    color: rgb(235, 232, 232);
+    font-size: 16px;
+    text-align: ;
+    justify-items: center;
+}
+
+/*** Features Ending ***********************/
+
+
+
+
+
+
+/*** Projects Start ***********************/
+
+#projects {
+    height: 300px;
+    background-color: white;
+}
+
+/*** Projects Ending ***********************/
+
+
+/*** Projects Count Start ***********************/
+
+#project_count {
+    height: 200px;
+    background-color: rgb(24, 24, 24);
+}
+
+#project_count .container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#project_count .container .box{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+} 
+
+#project_count .container .box h3 {
+    font-size: 65px;
+}
+
+#project_count .container .box p {
+    font-size: 17px;
+}
+
+/*** Projects Count Ending ***********************/
+
+
+
+
+/*** Timeline Start ***********************/
+
+
+/* Grid right start*/
+#timeline .grid.right{
+    height: 500px;
+    background-color: #242323;
+    display: grid;
+    grid-template-columns: 1fr 15px 15px 1fr;
+    grid-template-rows: 1fr 30px 1fr;
+    grid-template-areas:
+                "text_box line .    . "
+                "text_box icon icon . "
+                "text_box line2 .    . ";
+}
+
+#timeline .grid.right .text_box {
+    grid-area: text_box;
+}
+
+#timeline .grid.right .icon {
+    grid-area: icon;
+}
+
+#timeline .grid.right .line {
+    grid-area: line;
+}
+
+#timeline .grid.right .line2 {
+    grid-area: line2;
+}
+/* Grid right end*/
+
+/* Grid left start */
+
+#timeline .grid.left{
+    height: 500px;
+    background-color: #242323;
+    display: grid;
+    grid-template-columns: 1fr 15px 15px 1fr;
+    grid-template-rows: 1fr 30px 1fr;
+    grid-template-areas:
+                ". line .    text_box "
+                ". icon icon text_box "
+                ". line2 .   text_box ";
+}
+
+#timeline .grid.left .text_box {
+    grid-area: text_box;
+}
+
+#timeline .grid.left .icon {
+    grid-area: icon;
+}
+
+#timeline .grid.left .line {
+    grid-area: line;
+}
+
+#timeline .grid.left .line2 {
+    grid-area: line2;
+}
+/* Grid left end */
+
+
+#timeline .grid {
+    padding: 50px;
+}
+
+#timeline .grid .text_box {
+    margin: 20px 70px;
+    padding: 30px;
+    background-color: rgb(24, 24, 24);
+    height: 70%;
+}
+
+
+#timeline .grid .text_box .text_img{
+    height: 150px;
+    background-color: #bebcbc;
+    overflow: hidden;
+}
+
+#timeline .grid .text_box .text_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#timeline .grid .text_box .header{
+    padding: 10px 0;
+}
+
+#timeline .grid .text_box .text p{
+    overflow: hidden;
+    font-size: 13px;
+}
+
+
+
+#timeline .grid .icon {
+    position: relative;
+    left: -1px;
+    border-style: solid;
+    /*border-radius: 50%;*/
+    transform: rotate(45deg);
+    border-color: rgb(20, 20, 20);/*#252525;*/
+    background-color: #de302f;/*hsl(240, 87%, 59%);*/
+}
+
+#timeline .grid .line, #timeline .grid .line2 {
+    border-right-style: solid;
+    border-width: 2px;
+    border-right-color: rgb(20, 20, 20);
+}
+
+
+
+
+
+
+
+
+
+
+#timeline .grid .text:after{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 0px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 0px solid #ffffff;
+    top:100%;
+    left: 50%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: #de302f;
+  }
+
+/*** Timeline Ending ***********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
