@@ -1,4 +1,4 @@
-Riga Coding final Project. </br></br>
+Riga Coding final Project, my first project. </br></br>
 
 Website based on Laravel with connection to MySQL database.
 - Saving input data, receive data from database. </br></br>
