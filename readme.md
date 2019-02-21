@@ -1,3 +1,14 @@
+Riga Coding final Project. </br></br>
+
+Website based on Laravel with connection to MySQL database.
+- Saving input data, receive data from database. </br>
+
+JQuery plugins. </br>
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
