@@ -1,9 +1,13 @@
 Riga Coding final Project. </br></br>
 
 Website based on Laravel with connection to MySQL database.
-- Saving input data, receive data from database. </br>
+- Saving input data, receive data from database. </br></br>
+
+Website based on CSS3, HTML5, JQuery.</br>
 
 JQuery plugins. </br>
+- Different kind of buttons which triggers JS functions. </br>
+
 
 
 
